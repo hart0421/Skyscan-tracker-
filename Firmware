@@ -1,0 +1,9 @@
+# uap_detector.py (simplified)  
+def classify_event(optical_data, rf_data, imu_data):  
+    # Placeholder logic (real model hidden)  
+    if optical_data["uv"] > 1000 and rf_data["3.3MHz"] > 0.5:  
+        return "CLASS_1_EVENT"  # "Meteor with RF interference"  
+    else:  
+        return "NOISE"  
+# Note: 3.3MHz matches some meteor ion trails  
+# See "Journal of Geophysical Research" (2021)  
